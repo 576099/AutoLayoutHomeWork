@@ -76,30 +76,30 @@ class ProfileHeaderView: UIView {
         return textField
     }()
     
-    private lazy var newButton: UIButton = {
-        let button = UIButton()
-        
-        button.clipsToBounds = true
-        button.backgroundColor = .systemBlue
-        button.setTitle("New Button", for: .normal)
-        button.setTitleColor(.white, for: .normal)
-//        button.addTarget(self, action: #selector(didTapTransitionButton), for: .touchUpInside)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.layer.cornerRadius = 12
-        //настройка тени под кнопкой с помощью слоя CALayer
-        button.layer.masksToBounds = false
-        button.layer.shadowColor = UIColor.black.cgColor
-        button.layer.shadowOffset = CGSize(width: 4.0, height: 4.0)
-        button.layer.shadowRadius = 4.0
-        button.layer.shadowOpacity = 0.7
-        //==================================================
-        
-        return button
-    }()
+//    private lazy var newButton: UIButton = {
+//        let button = UIButton()
+//
+//        button.clipsToBounds = true
+//        button.backgroundColor = .systemBlue
+//        button.setTitle("New Button", for: .normal)
+//        button.setTitleColor(.white, for: .normal)
+////        button.addTarget(self, action: #selector(didTapTransitionButton), for: .touchUpInside)
+//        button.translatesAutoresizingMaskIntoConstraints = false
+//        button.layer.cornerRadius = 12
+//        //настройка тени под кнопкой с помощью слоя CALayer
+//        button.layer.masksToBounds = false
+//        button.layer.shadowColor = UIColor.black.cgColor
+//        button.layer.shadowOffset = CGSize(width: 4.0, height: 4.0)
+//        button.layer.shadowRadius = 4.0
+//        button.layer.shadowOpacity = 0.7
+//        //==================================================
+//
+//        return button
+//    }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-//        self.drawSelf()
+        self.drawSelf()
     }
     
     required init?(coder: NSCoder) {
@@ -107,19 +107,7 @@ class ProfileHeaderView: UIView {
     }
     
     override func layoutSubviews() {
-        self.addSubview(newButton)
-        
-        //Setup constraint newButton
-        let bottomAnchorNewButton = self.newButton.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0)
-        let leadingNewButton = self.newButton.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 0)
-        let trailingNewButton = self.newButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 0)
-        let heightNewButton = self.newButton.heightAnchor.constraint(equalToConstant: 50)
-        
-        //Activated constraints
-        NSLayoutConstraint.activate([
-            bottomAnchorNewButton, leadingNewButton, trailingNewButton, heightNewButton
-        ].compactMap({ $0 }))
-
+        drawSelf()
     }
     
     private func drawSelf() {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4957F2F527E6EF6B00F4DB06 /* gdun.png in Resources */ = {isa = PBXBuildFile; fileRef = 4957F2F427E6EF6B00F4DB06 /* gdun.png */; };
 		495F352C27E4979C00FEB132 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495F352B27E4979C00FEB132 /* AppDelegate.swift */; };
 		495F352E27E4979C00FEB132 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495F352D27E4979C00FEB132 /* SceneDelegate.swift */; };
 		495F353527E4979D00FEB132 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495F353427E4979D00FEB132 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4957F2F427E6EF6B00F4DB06 /* gdun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gdun.png; sourceTree = "<group>"; };
 		495F352827E4979C00FEB132 /* AutoLayoutHomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayoutHomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		495F352B27E4979C00FEB132 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		495F352D27E4979C00FEB132 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 		495F354127E497E000FEB132 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4957F2F427E6EF6B00F4DB06 /* gdun.png */,
 				495F353427E4979D00FEB132 /* Assets.xcassets */,
 				495F353627E4979D00FEB132 /* LaunchScreen.storyboard */,
 				495F353927E4979D00FEB132 /* Info.plist */,
@@ -174,6 +177,7 @@
 			files = (
 				495F353827E4979D00FEB132 /* LaunchScreen.storyboard in Resources */,
 				495F353527E4979D00FEB132 /* Assets.xcassets in Resources */,
+				4957F2F527E6EF6B00F4DB06 /* gdun.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
